@@ -11,7 +11,7 @@ class CfDlpDecode < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Devolvio-B-V/cloudflare-dlp-forensic-copy-decoder/releases/download/v2.0.1/cloudflare-dlp-forensic-copy-decoder_Darwin_x86_64.tar.gz"
-      sha256 "0b528beb8cdf8aa2dc98d3a52a20e441abd19c74b2239036bfb982558eacb2d2"
+      sha256 "52fe0f1a30ec235844a5aeb5c66144c3d25904d33b8434ebaa286a302856034a"
 
       def install
         bin.install "cf-dlp-decode"
@@ -19,7 +19,7 @@ class CfDlpDecode < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Devolvio-B-V/cloudflare-dlp-forensic-copy-decoder/releases/download/v2.0.1/cloudflare-dlp-forensic-copy-decoder_Darwin_arm64.tar.gz"
-      sha256 "49c397c251dcbbeab3cfc4ba859a5c41162f2d0b3ce0c35ad66904d289f90a5f"
+      sha256 "98bedc735264d0f494d91bbe012e238ad03c921e513bd856b577bf21a3fc3def"
 
       def install
         bin.install "cf-dlp-decode"
@@ -30,14 +30,14 @@ class CfDlpDecode < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Devolvio-B-V/cloudflare-dlp-forensic-copy-decoder/releases/download/v2.0.1/cloudflare-dlp-forensic-copy-decoder_Linux_x86_64.tar.gz"
-      sha256 "fa9007cc9136388651d504cc3cb9051deb5676c7f651ed1ee3cbba602cf9e3f4"
+      sha256 "91596ae8f292430c6fe16b1bcc7055409366e4058f19ecb560d5ac332d63b6f1"
       def install
         bin.install "cf-dlp-decode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Devolvio-B-V/cloudflare-dlp-forensic-copy-decoder/releases/download/v2.0.1/cloudflare-dlp-forensic-copy-decoder_Linux_arm64.tar.gz"
-      sha256 "33dc8ec9c2cc660fea772cfbc1a9ab3f1bef4958b30f3f637487b939262c9c67"
+      sha256 "7666965c086aac25bee1df005500e545b583a03742a4b8858f8aa8ab96266c66"
       def install
         bin.install "cf-dlp-decode"
       end
